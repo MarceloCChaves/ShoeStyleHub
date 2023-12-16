@@ -1,0 +1,9 @@
+<div class="product-container  ff-roboto-mono">
+  <img src="{{ product.image }}" alt="{{ product.name }}" class="product-image"/>
+  <div>
+    <h1 class="product-title">{{ product.name }}</h1>
+    <p class="product-description"><b>{{ product.description }}</b></p>
+    <p class="product-price">R$ {{ product.price.toFixed(2).replace(".", ",") }}</p>
+  </div>
+</div>
+

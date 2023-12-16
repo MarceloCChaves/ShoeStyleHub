@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Nike Air force 1",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      "price": 550,
+      "image": "https://imgnike-a.akamaihd.net/1920x1920/01113751.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Adidas Run",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      "price": 250,
+      "image": "https://t-static.dafiti.com.br/Yzo5cgeThiL4UHDpqiuRNhx76JQ=/fit-in/430x623/static.dafiti.com.br/p/adidas-tenis-adidas-run-60s-2.0-masculino-adidas-vinho-0844-54870801-1-zoom.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Adidas VS Pace",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      "price": 199.90,
+      "image": "https://static.netshoes.com.br/produtos/tenis-adidas-vs-pace-masculino/08/COL-0552-008/COL-0552-008_zoom1.jpg?ts=1695358180&ims=544x"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+.product-container {
+  background-color: #F8F9FE;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin: 1.25rem 0;
+  border-radius: 1rem;
+  background: var(--light-black);
+
+  display: flex;
+  align-items: center;
+}
+
+.product-title {
+  font-weight: 700;
+}
+
+.product-image {
+  width: 200px;
+  height: 150px;
+  border-radius: 16px;
+  margin: 0 20px;
+}
+
+.product-description {
+  color: var(--gray);
+}
+
+.product-price, .product-title {
+  color: var(--white);
+}
+
+@media(max-width: 580px){
+  .product-container{
+    display: block;
+  }
+
+  .product-image {
+    margin: 0;
+  }
+}

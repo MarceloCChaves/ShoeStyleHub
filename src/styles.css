@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --orange: #ff5e1e;
+  --gray: #ccc6ba;
+  --light-black: #3f3c37;
+  --black: #201f1b;
+}
+
+.ff-inter { font-family: 'Inter', sans-serif; }
+.ff-roboto-mono { font-family: 'Roboto Mono', monospace; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

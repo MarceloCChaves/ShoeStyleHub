@@ -1,0 +1,13 @@
+<section>
+  <div *ngIf="productList.length > 0, else semProdutos">
+    <div *ngFor="let item of productList">
+      <app-product [product]="item"></app-product>
+    </div>
+  </div>
+</section>
+<ng-template #semProdutos>
+  <div class="ff-inter">
+    <p>Não há produtos cadastrados</p>
+  </div>
+</ng-template>
+

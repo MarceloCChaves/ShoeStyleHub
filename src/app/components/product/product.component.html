@@ -1,9 +1,18 @@
 <div class="product-container  ff-roboto-mono">
   <img src="{{ product.image }}" alt="{{ product.name }}" class="product-image"/>
   <div>
-    <h1 class="product-title">{{ product.name }}</h1>
+    <div class="product-actions">
+      <h1 class="product-title">{{ product.name }}</h1>
+      <div>
+        <button class="product-button" routerLink="/editarProduto/{{ product.id }}"><mat-icon>edit</mat-icon></button>
+        <button class="product-button" routerLink="/deletarProduto/{{ product.id }}"><mat-icon>delete</mat-icon></button>
+      </div>
+    </div>
     <p class="product-description"><b>{{ product.description }}</b></p>
-    <p class="product-price">R$ {{ product.price.toFixed(2).replace(".", ",") }}</p>
+    <div class="product-buy">
+      <p class="product-price">R$ {{ product.price.toFixed(2).replace(".", ",") }}</p>
+      <button class="product-buy-button"><mat-icon>shopping_cart</mat-icon></button>
+    </div>
   </div>
 </div>
 

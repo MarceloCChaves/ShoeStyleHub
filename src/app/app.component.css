@@ -1,5 +1,4 @@
 main {
-  background: var(--black);
   min-height: 100vh;
-  padding: 20px;
+  padding: 10px;
 }

@@ -18,4 +18,12 @@
 .ff-roboto-mono { font-family: 'Roboto Mono', monospace; }
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { background: var(--black); }
+
+.material-icons {
+  font-size: 20px;
+}
+
+.mat-icon {
+  height: 18px !important;
+}

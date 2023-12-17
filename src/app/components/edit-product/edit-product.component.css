@@ -1,0 +1,59 @@
+.edit-product-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.header h2 {
+  color: var(--white);
+  font-size: 24px;
+  font-style: italic;
+}
+
+.edit-product-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-product-form input, .edit-product-form textarea {
+  width: 500px;
+  max-width: 100%;
+  padding: 10px 8px;
+  margin: 10px 0 20px;
+  border-radius: 0.5rem;
+}
+
+.edit-product-label {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.edit-product-save {
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.edit-product-cancel {
+  background-color: var(--white);
+  color: var(--orange);
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.button-disabled {
+  opacity: 0.5;
+}

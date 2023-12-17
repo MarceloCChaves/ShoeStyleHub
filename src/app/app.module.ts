@@ -7,18 +7,28 @@ import { ListProductsComponent } from './components/list-products/list-products.
 import { ProductComponent } from './components/product/product.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './components/header/header.component';
+import { CreateProductComponent } from './create-product/create-product.component';
+import { FormsModule } from '@angular/forms';
+import {MatIconModule} from '@angular/material/icon';
+import { EditProductComponent } from './components/edit-product/edit-product.component';
+import { DeleteProductComponent } from './components/delete-product/delete-product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListProductsComponent,
     ProductComponent,
-    HeaderComponent
+    HeaderComponent,
+    CreateProductComponent,
+    EditProductComponent,
+    DeleteProductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    FormsModule,
+    HttpClientModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

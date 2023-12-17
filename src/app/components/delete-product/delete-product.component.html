@@ -1,0 +1,9 @@
+<section class="delete-product-container ff-inter">
+  <div class="delete-product-modal">
+    <strong class="delete-product-title">O produto {{ product.name }} será apagado, tem certeza?</strong>
+    <div>
+      <button class="button-delete" (click)="deleteProduct()">Excluir</button>
+      <button class="button-cancel" (click)="cancel()">Cancelar</button>
+    </div>
+  </div>
+</section>

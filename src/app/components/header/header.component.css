@@ -2,17 +2,18 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 20px 0 0;
 }
 
 .header h2 {
   color: var(--white);
+  cursor: pointer;
 }
 
 .header-button {
   background-color: var(--orange);
   color: var(--white);
   padding: 1rem;
-  box-sizing: border-box;
   border-radius: 0.5rem;
   border: none;
   cursor: pointer;

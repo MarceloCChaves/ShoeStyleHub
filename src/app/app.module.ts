@@ -7,7 +7,7 @@ import { ListProductsComponent } from './components/list-products/list-products.
 import { ProductComponent } from './components/product/product.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './components/header/header.component';
-import { CreateProductComponent } from './create-product/create-product.component';
+import { CreateProductComponent } from './components/create-product/create-product.component';
 import { FormsModule } from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
 import { EditProductComponent } from './components/edit-product/edit-product.component';

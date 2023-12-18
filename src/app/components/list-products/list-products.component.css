@@ -3,11 +3,13 @@
   color: var(--white);
   font-size: 24px;
   font-weight: 700;
+  margin-top: 50px;
 }
 
 .list-products-search-products {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .list-products-search-product {
@@ -15,6 +17,18 @@
   color: var(--white);
   border: none;
   border-radius: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  position: relative;
+  right: 8px;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+.list-products-select-filter {
+  background: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
   cursor: pointer;
   position: relative;
   right: 8px;

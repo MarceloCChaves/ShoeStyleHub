@@ -23,7 +23,7 @@ import { PaginationComponent } from './components/pagination/pagination.componen
     CreateProductComponent,
     EditProductComponent,
     DeleteProductComponent,
-    PaginationComponent
+    PaginationComponent,
   ],
   imports: [
     BrowserModule,

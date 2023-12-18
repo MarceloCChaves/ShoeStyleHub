@@ -51,4 +51,20 @@ export class ProductService {
     product.isFavorited = !product.isFavorited;
     return this.editProduct(product);
   }
+
+  getAllFavorites(page: number, filter: string): Observable<Product[]>{
+    const itensPerPage = 5;
+
+    let params = new HttpParams()
+      .set("_page", page)
+      .set("_limit", itensPerPage)
+      .set("isFavorited", true)
+
+    if(filter.trim().length > 2){
+      params = params.set("q", filter)
+    }
+
+    return this.http
+      .get<Product[]>(this.API, {params: params});
+  }
 }

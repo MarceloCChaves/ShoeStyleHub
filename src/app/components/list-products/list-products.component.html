@@ -1,13 +1,20 @@
 <section>
   <div class="list-products-search-products">
-    <input
-      type="text"
-      class="list-products-filter"
-      placeholder="Procurar sapato..."
-      autofocus
-      [(ngModel)]="filter"
-    />
-    <button class="list-products-search-product" (click)="searchProduct()">Pesquisar</button>
+    <div>
+        <input
+        type="text"
+        class="list-products-filter"
+        placeholder="Procurar sapato..."
+        autofocus
+        [(ngModel)]="filter"
+      />
+      <button class="list-products-search-product" (click)="searchProduct()">Pesquisar</button>
+    </div>
+    <select class="list-products-select-filter" [(ngModel)]="filterType" (change)="getAllFavorites()">
+      <option class="list-products-select-option" hidden>Filtrar por</option>
+      <option class="list-products-select-option">Todos</option>
+      <option class="list-products-select-option">Favoritos</option>
+    </select>
   </div>
   <div *ngIf="productList.length > 0; else noMoreProducts">
     <div *ngFor="let item of productList">
@@ -16,6 +23,7 @@
   </div>
 </section>
 <app-pagination
+  *ngIf="productList.length > 0"
   [hasMoreProducts]="hasMoreProducts"
   (click)="loadMoreProducts()"
 ></app-pagination>

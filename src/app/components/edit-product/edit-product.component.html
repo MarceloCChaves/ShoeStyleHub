@@ -1,44 +1,86 @@
 <section class="edit-product-container ff-inter">
   <header class="header">
-    <h2>
-      Editar sapato
-    </h2>
+    <h2>Editar sapato</h2>
   </header>
-  <form class="edit-product-form">
+  <form class="edit-product-form" [formGroup]="form" *ngIf="form">
     <label class="edit-product-label" for="nome">Nome</label>
-    <input
-      id="nome"
-      name="nome"
-      placeholder="Digite o nome"
-      [(ngModel)]="product.name"
-    />
+    <input id="nome" formControlName="name" placeholder="Digite o nome" />
+    <div
+      class="error"
+      *ngIf="form.get('name')?.errors?.['required'] && form.get('name')?.touched"
+    >
+      Nome é obrigatório!
+    </div>
+    <div
+      class="error"
+      *ngIf="form.get('name')?.errors?.['pattern'] && form.get('name')?.touched"
+    >
+      Nome não pode começar com espaços em branco!
+    </div>
     <label class="edit-product-label" for="Imagem">Preço</label>
     <input
       id="Preco"
       type="number"
-      name="Preco"
+      formControlName="price"
       placeholder="Digite o preço"
-      [(ngModel)]="product.price"
     />
+    <div
+      class="error"
+      *ngIf="form.get('price')?.errors?.['required'] && form.get('price')?.touched"
+    >
+      Preço é obrigatório!
+    </div>
+    <div
+      class="error"
+      *ngIf="form.get('price')?.errors?.['pattern'] && form.get('price')?.touched"
+    >
+      Preço precisa ser maior que zero
+    </div>
     <label class="edit-product-label" for="Imagem">Imagem</label>
-    <input
-      id="Imagem"
-      name="Imagem"
-      placeholder="Link da imagem"
-      [(ngModel)]="product.image"
-    />
+    <input id="Imagem" formControlName="image" placeholder="Link da imagem" />
+    <div
+      class="error"
+      *ngIf="form.get('image')?.errors?.['required'] && form.get('image')?.touched"
+    >
+      Imagem é obrigatória!
+    </div>
+    <div
+      class="error"
+      *ngIf="form.get('image')?.errors?.['pattern'] && form.get('image')?.touched"
+    >
+      Imagem precisa conter os arquivos .png ou .jpg
+    </div>
     <label class="edit-product-label" for="descricao">Descrição</label>
     <textarea
       id="Descrição"
-      name="Descrição"
+      formControlName="description"
       placeholder="Digite a descrição"
       rows="10"
-      [(ngModel)]="product.description"
     ></textarea>
-    <div>
-      <button (click)="editProduct()" class="edit-product-save">Salvar</button>
-      <button type="button" (click)="cancel()" class="edit-product-cancel">Cancelar</button>
+    <div
+      class="error"
+      *ngIf="form.get('description')?.errors?.['required'] && form.get('description')?.touched"
+    >
+      Descrição é obrigatória!
+    </div>
+    <div
+      class="error"
+      *ngIf="form.get('description')?.errors?.['pattern'] && form.get('description')?.touched"
+    >
+      Descrição precisa ter no mínimo três caractéres
+    </div>
+    <div class="acoes">
+      <button
+        (click)="editProduct()"
+        class="edit-product-save"
+        [disabled]="!form.valid"
+        [ngClass]="enableButton()"
+      >
+        Salvar
+      </button>
+      <button type="button" (click)="cancel()" class="edit-product-cancel">
+        Cancelar
+      </button>
     </div>
   </form>
 </section>
-

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Product } from '../app/components/Products';
 import { Observable } from 'rxjs';
 
@@ -13,8 +13,15 @@ export class ProductService {
   constructor(private http: HttpClient) {
   }
 
-  getAll(): Observable<Product[]>{
-    return this.http.get<Product[]>(this.API);
+  getAll(page: number): Observable<Product[]>{
+    const itensPerPage = 5;
+
+    let params = new HttpParams()
+      .set("_page", page)
+      .set("_limit", itensPerPage)
+
+    return this.http
+      .get<Product[]>(this.API, {params: params});
   }
 
   createProduct(product: Product): Observable<Product> {

@@ -13,11 +13,24 @@ export class ListProductsComponent implements OnInit {
 
   ];
 
+  currentPage: number = 1;
+
+  hasMoreProducts: boolean = true;
+
   constructor(private service: ProductService) { }
 
   ngOnInit(): void {
-    this.service.getAll().subscribe((list) => {
+    this.service.getAll(this.currentPage).subscribe((list) => {
       this.productList = list;
+    })
+  }
+
+  loadMoreProducts(){
+    this.service.getAll(this.currentPage += 1).subscribe((list) => {
+      this.productList.push(...list);
+      if(!list.length){
+        this.hasMoreProducts = false;
+      }
     })
   }
 

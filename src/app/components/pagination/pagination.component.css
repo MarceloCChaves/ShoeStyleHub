@@ -1,0 +1,18 @@
+.center {
+  text-align: center;
+}
+
+.pagination-button {
+  background: var(--orange);
+  color: var(--white);
+  border: none;
+  padding: 20px 40px;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.no-more-products {
+  color: var(--white);
+  font-weight: 700;
+}

@@ -1,0 +1,7 @@
+<div class="center" *ngIf="hasMoreProducts; else noMoreProducts">
+  <button class="pagination-button">Carregar mais</button>
+</div>
+
+<ng-template #noMoreProducts>
+  <p class="center ff-inter no-more-products">Não há mais produtos para exibir</p>
+</ng-template>

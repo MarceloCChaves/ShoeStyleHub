@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../../products.service';
 import { Router } from '@angular/router';
-import { Product } from "../Products";
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-create-product',
@@ -10,25 +10,49 @@ import { Product } from "../Products";
 })
 export class CreateProductComponent implements OnInit {
 
-  product: Product = {
-    name: '',
-    description: '',
-    price: 0,
-    image: '',
-  }
+  form!: FormGroup
 
   constructor(
     private service: ProductService,
-    private router: Router
+    private router: Router,
+    private formBuilder: FormBuilder
   ) {}
 
   ngOnInit(): void {
+    this.form = this.formBuilder.group({
+      name: ['', Validators.compose([
+        Validators.required,
+        Validators.pattern(/(.|\s)*\S(.|\s)*/),
+      ])],
+      description: ['', Validators.compose([
+        Validators.required,
+        Validators.minLength(3)
+      ])],
+      price: [0, Validators.compose([
+        Validators.required,
+        Validators.pattern(/^[1-9][0-9]*$/)
+      ])],
+      image: ['', Validators.compose([
+        Validators.required,
+        Validators.pattern(/(https?:\/\/.*\.(?:png|jpg))/i)
+      ])],
+    });
+  }
+
+  enableButton(){
+    if(this.form.valid){
+      return 'create-product-save'
+    } else {
+      return 'disabled-button'
+    }
   }
 
   createProduct(){
-    this.service.createProduct(this.product).subscribe(() => {
-      this.router.navigate(['/']);
-    })
+    if(this.form.valid){
+      this.service.createProduct(this.form.value).subscribe(() => {
+        this.router.navigate(['/']);
+      })
+    }
   }
 
   cancel(){

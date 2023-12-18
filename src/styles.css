@@ -27,3 +27,13 @@ body { background: var(--black); }
 .mat-icon {
   height: 18px !important;
 }
+
+.disabled-button {
+  opacity: 0.5;
+}
+
+.error {
+  font-size: 12px;
+  margin: 0 0 10px;
+  color: #ff0000;
+}

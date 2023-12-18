@@ -4,3 +4,34 @@
   font-size: 24px;
   font-weight: 700;
 }
+
+.list-products-search-products {
+  display: flex;
+  justify-content: center;
+}
+
+.list-products-search-product {
+  background: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  position: relative;
+  right: 8px;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+.list-products-filter {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 10px 20px;
+  border: none;
+}
+
+.list-products-filter::placeholder {
+  color: var(--light-black);
+  font-family: 'Inter';
+}

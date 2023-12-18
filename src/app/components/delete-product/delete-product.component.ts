@@ -15,6 +15,7 @@ export class DeleteProductComponent implements OnInit {
     description: '',
     price: 0,
     image: '',
+    isFavorited: false
   }
 
   constructor(

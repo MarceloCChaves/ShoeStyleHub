@@ -40,6 +40,7 @@ export class EditProductComponent implements OnInit {
           Validators.required,
           Validators.pattern(/(https?:\/\/.*\.(?:png|jpg))/i)
         ])],
+        isFavorited: [false]
       });;
     })
   }

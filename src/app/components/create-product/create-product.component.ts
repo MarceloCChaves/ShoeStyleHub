@@ -36,6 +36,7 @@ export class CreateProductComponent implements OnInit {
         Validators.required,
         Validators.pattern(/(https?:\/\/.*\.(?:png|jpg))/i)
       ])],
+      isFavorited: [false]
     });
   }
 

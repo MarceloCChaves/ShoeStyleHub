@@ -13,12 +13,16 @@ export class ProductService {
   constructor(private http: HttpClient) {
   }
 
-  getAll(page: number): Observable<Product[]>{
+  getAll(page: number, filter: string): Observable<Product[]>{
     const itensPerPage = 5;
 
     let params = new HttpParams()
       .set("_page", page)
       .set("_limit", itensPerPage)
+
+    if(filter.trim().length > 2){
+      params = params.set("q", filter);
+    }
 
     return this.http
       .get<Product[]>(this.API, {params: params});
@@ -41,5 +45,10 @@ export class ProductService {
   deleteProduct(id: number): Observable<Product>{
     const url = `${this.API}/${id}`
     return this.http.delete<Product>(url);
+  }
+
+  changeFavorite(product: Product): Observable<Product>{
+    product.isFavorited = !product.isFavorited;
+    return this.editProduct(product);
   }
 }

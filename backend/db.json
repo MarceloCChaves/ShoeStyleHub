@@ -5,42 +5,48 @@
       "name": "Nike Air force 100",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
       "price": 550,
-      "image": "https://imgnike-a.akamaihd.net/1920x1920/01113751.jpg"
+      "image": "https://imgnike-a.akamaihd.net/1920x1920/01113751.jpg",
+      "isFavorited": false
     },
     {
       "id": 2,
       "name": "Adidas Run",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
       "price": 250,
-      "image": "https://t-static.dafiti.com.br/Yzo5cgeThiL4UHDpqiuRNhx76JQ=/fit-in/430x623/static.dafiti.com.br/p/adidas-tenis-adidas-run-60s-2.0-masculino-adidas-vinho-0844-54870801-1-zoom.jpg"
+      "image": "https://t-static.dafiti.com.br/Yzo5cgeThiL4UHDpqiuRNhx76JQ=/fit-in/430x623/static.dafiti.com.br/p/adidas-tenis-adidas-run-60s-2.0-masculino-adidas-vinho-0844-54870801-1-zoom.jpg",
+      "isFavorited": false
     },
     {
       "id": 3,
       "name": "Adidas VS Pace",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
       "price": 199.9,
-      "image": "https://static.netshoes.com.br/produtos/tenis-adidas-vs-pace-masculino/08/COL-0552-008/COL-0552-008_zoom1.jpg?ts=1695358180&ims=544x"
+      "image": "https://static.netshoes.com.br/produtos/tenis-adidas-vs-pace-masculino/08/COL-0552-008/COL-0552-008_zoom1.jpg?ts=1695358180&ims=544x",
+      "isFavorited": false
     },
     {
       "name": "Chuteira Nike Mercurial Vapor 15",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       "price": 219,
       "image": "https://imgnike-a.akamaihd.net/768x768/02260151.jpg",
-      "id": 5
+      "id": 5,
+      "isFavorited": false
     },
     {
       "name": "Tênis New Balance ML501 - Masculino",
       "description": "Conheça o Tênis New Balance ML501!\n\nUm clássico repaginado que moderniza qualquer look casual com um toque esportivo e jovialidade, o Tênis New Balance é a opção certa.\n\nSeu cabedal (parte superior do tênis) possui a leveza e respirabilidade do mesh (malha em tramas abertas) e entressola com EVA lixado em toda a extensão para leve e duradouro amortecimento.\n\nNa parte interna do New Balance ML501, detalhes acolchoados oferecem maciez e proteção contra o atrito de contato com solado emborrachado.\n\nAproveite e compre já no site da Centauro!",
       "price": 329,
       "image": "https://imgcentauro-a.akamaihd.net/768x768/92344151A1.jpg",
-      "id": 6
+      "id": 6,
+      "isFavorited": false
     },
     {
       "name": "Tênis Puma Anzarun Lite adulto-unissex",
       "description": "Anzarun Lite. Mostre seu incrível senso de style com um par de tênis PUMA. Esses confortáveis tênis são um verdadeiro guarda-roupa essencial. Este par de tênis feminino personalizados representa apenas uma pequena amostra dos muitos designs de calçados incrivelmente impressionantes oferecidos on-line. Pede este incrível tênis que você completará sua aparência para ajudá-lo a parecer impecável.",
       "price": 219,
       "image": "https://m.media-amazon.com/images/I/81p6V+OI-hL._AC_SX695_.jpg",
-      "id": 7
+      "id": 7,
+      "isFavorited": false
     }
   ]
 }

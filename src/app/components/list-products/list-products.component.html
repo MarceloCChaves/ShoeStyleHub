@@ -1,14 +1,26 @@
 <section>
-  <div *ngIf="productList.length > 0, else noMoreProducts">
+  <div class="list-products-search-products">
+    <input
+      type="text"
+      class="list-products-filter"
+      placeholder="Procurar sapato..."
+      autofocus
+      [(ngModel)]="filter"
+    />
+    <button class="list-products-search-product" (click)="searchProduct()">Pesquisar</button>
+  </div>
+  <div *ngIf="productList.length > 0; else noMoreProducts">
     <div *ngFor="let item of productList">
       <app-product [product]="item"></app-product>
     </div>
   </div>
 </section>
-<app-pagination [hasMoreProducts]="hasMoreProducts" (click)="loadMoreProducts()"></app-pagination>
+<app-pagination
+  [hasMoreProducts]="hasMoreProducts"
+  (click)="loadMoreProducts()"
+></app-pagination>
 <ng-template #noMoreProducts>
   <div class="ff-inter no-products">
     <p>Não há produtos cadastrados</p>
   </div>
 </ng-template>
-

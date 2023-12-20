@@ -1,10 +1,10 @@
-<p align="center">
-  <img src="src/assets/readmeImage.png" alt="shoestylehub homepage">
-</p>
-
 # ShoestyleHub - Gestão de Estoque de Sapatos
 
 O ShoestyleHub é uma aplicação web desenvolvida para facilitar a gestão de estoque de sapatos. Com esta plataforma, os usuários podem realizar diversas operações, como listar, cadastrar, editar e remover sapatos do inventário. Além disso, a aplicação oferece a funcionalidade de criar listas personalizadas para favoritar sapatos e permite a aplicação de filtros para uma busca mais eficiente.
+
+<p align="center">
+  <img src="src/assets/readmeImage.png" alt="shoestylehub homepage">
+</p>
 
 # Funcionalidades Principais
 

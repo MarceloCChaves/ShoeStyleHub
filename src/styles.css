@@ -33,7 +33,7 @@ body { background: var(--black); }
 }
 
 .error {
-  font-size: 12px;
+  font-size: 10px;
   margin: 0 0 10px;
   color: #ff0000;
 }

@@ -6,7 +6,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
       "price": 550,
       "image": "https://imgnike-a.akamaihd.net/1920x1920/01113751.jpg",
-      "isFavorited": false
+      "isFavorited": true
     },
     {
       "id": 2,
@@ -30,14 +30,6 @@
       "price": 219,
       "image": "https://imgnike-a.akamaihd.net/768x768/02260151.jpg",
       "id": 5,
-      "isFavorited": false
-    },
-    {
-      "name": "Tênis New Balance ML501 - Masculino",
-      "description": "Conheça o Tênis New Balance ML501!\n\nUm clássico repaginado que moderniza qualquer look casual com um toque esportivo e jovialidade, o Tênis New Balance é a opção certa.\n\nSeu cabedal (parte superior do tênis) possui a leveza e respirabilidade do mesh (malha em tramas abertas) e entressola com EVA lixado em toda a extensão para leve e duradouro amortecimento.\n\nNa parte interna do New Balance ML501, detalhes acolchoados oferecem maciez e proteção contra o atrito de contato com solado emborrachado.\n\nAproveite e compre já no site da Centauro!",
-      "price": 329,
-      "image": "https://imgcentauro-a.akamaihd.net/768x768/92344151A1.jpg",
-      "id": 6,
       "isFavorited": false
     },
     {

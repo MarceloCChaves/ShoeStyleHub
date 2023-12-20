@@ -22,7 +22,7 @@ const routes: Routes = [
   {
     path: 'deletarProduto/:id',
     component: DeleteProductComponent
-  }
+  },
 ];
 
 @NgModule({

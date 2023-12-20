@@ -70,7 +70,12 @@
       Descrição precisa ter no mínimo três caractéres
     </div>
     <div class="acoes">
-      <button (click)="createProduct()" class="create-product-save" [disabled]="!form.valid" [ngClass]="enableButton()">
+      <button
+        (click)="createProduct()"
+        class="create-product-save"
+        [disabled]="!form.valid"
+        [ngClass]="enableButton()"
+      >
         Salvar
       </button>
       <button type="button" (click)="cancel()" class="create-product-cancel">

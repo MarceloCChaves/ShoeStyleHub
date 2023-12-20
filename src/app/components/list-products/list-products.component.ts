@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../Products';
-import { ProductService } from 'src/app/products.service';
+import { ProductService } from 'src/app/services/products.service';
 
 @Component({
   selector: 'app-list-products',
@@ -52,7 +52,7 @@ export class ListProductsComponent implements OnInit {
     this.currentPage = 1;
     if (this.filterType === 'Todos') {
       this.service
-      .getAll((this.currentPage), this.filter)
+      .getAll(this.currentPage, this.filter)
       .subscribe((list) => {
         this.productList = list;
         if (!list.length) {
